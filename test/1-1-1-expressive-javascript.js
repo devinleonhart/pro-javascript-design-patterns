@@ -1,8 +1,8 @@
-const part1 = require('../src/object-oriented-javascript/expressive-javascript');
+const part1 = require('../src/1-object-oriented-javascript/1-expressive-javascript');
 const { expect } = require('chai');
 
 const name = part1.name;
-const sw = part1.test.sw;
+const test = part1.test.part1;
 
 describe('Part 1 - Expressive Javascript', function() {
   describe('Function Method', function() {
@@ -11,8 +11,8 @@ describe('Part 1 - Expressive Javascript', function() {
     });
 
     it('should have a Counter function.', function() {
-      expect(sw).to.be.a('object');
-      expect(sw.name).to.equal('Counter');
+      expect(test).to.be.a('object');
+      expect(test.name).to.equal('Counter');
     });
 
     it('should have a modified the Function prototype.', function() {
@@ -20,25 +20,25 @@ describe('Part 1 - Expressive Javascript', function() {
     });
 
     it('should have given Counter an increment method.', function() {
-      expect(sw.increment).to.be.a('Function');
+      expect(test.increment).to.be.a('Function');
     });
 
     it('should have given Counter a decrement method.', function() {
-      expect(sw.decrement).to.be.a('Function');
+      expect(test.decrement).to.be.a('Function');
     });
 
     it('should have an initial value.', function() {
-      expect(sw.value).to.equal(0);
+      expect(test.value).to.equal(0);
     });
 
     it('should increment', function() {
-      sw.increment();
-      expect(sw.value).to.equal(1);
+      test.increment();
+      expect(test.value).to.equal(1);
     });
 
     it('should decrement', function() {
-      sw.decrement();
-      expect(sw.value).to.equal(0);
+      test.decrement();
+      expect(test.value).to.equal(0);
     });
   });
 });

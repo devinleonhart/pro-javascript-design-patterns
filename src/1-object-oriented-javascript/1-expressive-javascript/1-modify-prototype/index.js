@@ -17,6 +17,6 @@ Counter
     this.value -= 1;
   });
 
-const sw = new Counter();
+const test = new Counter();
 
-module.exports = sw;
+module.exports = test;
