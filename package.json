@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "debug-1": "npx nodemon --inspect-brk ./src/object-oriented-javascript/index.js",
+    "debug-chapter-1": "npx nodemon --inspect-brk ./src/1-object-oriented-javascript/index.js",
     "lint": "npx eslint ./src",
-    "serve-1": "npx nodemon ./src/object-oriented-javascript/index.js",
+    "serve-chapter-1": "npx nodemon ./src/1-object-oriented-javascript/index.js",
     "test": "npx mocha"
   },
   "devDependencies": {

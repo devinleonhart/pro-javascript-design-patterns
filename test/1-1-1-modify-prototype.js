@@ -1,15 +1,20 @@
-const part1 = require('../src/1-object-oriented-javascript/1-expressive-javascript');
+const chapter1 = require('../src/1-object-oriented-javascript/1-expressive-javascript');
 const { expect } = require('chai');
 
-const name = part1.name;
-const test = part1.test.part1;
+const chapter = chapter1.chapter;
+const name = chapter1.name;
+const test = chapter1.test.section1;
 
-describe('Part 1 - Expressive Javascript', function() {
-  describe('Function Method', function() {
-    it('should have a name', function() {
-      expect(name).to.equal('expressive-javascript');
-    });
+describe('Chapter 1 - Section 1', function() {
+  it('should be the right chapter', function() {
+    expect(chapter).to.equal(1);
+  });
 
+  it('should have a name', function() {
+    expect(name).to.equal('expressive-javascript');
+  });
+
+  describe('Modify Prototype', function() {
     it('should have a Counter function.', function() {
       expect(test).to.be.a('object');
       expect(test.name).to.equal('Counter');

@@ -1,3 +1,7 @@
 module.exports = {
-  name: 'interfaces'
+  chapter: 2,
+  name: 'interfaces',
+  test: {
+    section1: require('./1-interface-class'),
+  }
 };
