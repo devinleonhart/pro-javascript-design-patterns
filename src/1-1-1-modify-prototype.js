@@ -17,6 +17,10 @@ Counter
     this.value -= 1;
   });
 
-const test = new Counter();
-
-module.exports = test;
+module.exports = {
+  part: 1,
+  chapter: 1,
+  section: 1,
+  name: 'expressive-javascript',
+  test: new Counter()
+};

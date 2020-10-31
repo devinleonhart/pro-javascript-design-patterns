@@ -15,4 +15,10 @@ let closure;
 
 // The reason this works is called "Lexical Scoping". closure is being executed in the context
 // of the iefe where x and y exist and not here.
-module.exports = closure();
+module.exports = {
+  part: 1,
+  chapter: 1,
+  section: 2,
+  name: 'expressive-javascript',
+  test: closure()
+};

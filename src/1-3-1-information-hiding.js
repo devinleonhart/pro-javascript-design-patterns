@@ -43,4 +43,10 @@ const Book = function() {
   };
 };
 
-module.exports = Book;
+module.exports = {
+  part: 1,
+  chapter: 3,
+  section: 1,
+  name: 'encapsulation',
+  test: Book
+};

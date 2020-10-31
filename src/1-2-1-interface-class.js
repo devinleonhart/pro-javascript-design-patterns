@@ -66,4 +66,10 @@ Interface.ensureImplements = function(object) {
   return true;
 };
 
-module.exports = Interface;
+module.exports = {
+  part: 1,
+  chapter: 2,
+  section: 1,
+  name: 'interfaces',
+  test: Interface
+};
