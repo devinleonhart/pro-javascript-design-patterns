@@ -2,6 +2,7 @@
   Javascript does not natively support the Interface pattern. We have to
   implement the Interface class ourselves to use the pattern.
 */
+
 const Interface = function(name, methods) {
   if (arguments.length !== 2) {
     throw new Error(

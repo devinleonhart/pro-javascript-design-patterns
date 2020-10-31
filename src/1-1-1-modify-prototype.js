@@ -1,4 +1,5 @@
 // Expand the Function prototype so you can easily add methods to new classes.
+
 Function.prototype.method = function(name, fn) {
   this.prototype[name] = fn;
   return this;
