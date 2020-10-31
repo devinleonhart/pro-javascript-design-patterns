@@ -1,9 +1,9 @@
-const chapter1 = require('../src/1-object-oriented-javascript/1-expressive-javascript');
+const { name, chapter, test } = require(
+  '../src/1-object-oriented-javascript/1-expressive-javascript'
+);
 const { expect } = require('chai');
 
-const chapter = chapter1.chapter;
-const name = chapter1.name;
-const test = chapter1.test.section2;
+const result = test.section2;
 
 describe('Chapter 1 - Section 2', function() {
   it('should be the right chapter', function() {
@@ -20,8 +20,8 @@ describe('Chapter 1 - Section 2', function() {
     });
 
     it('should have given access to internal members.', function() {
-      expect(test).to.be.a('number');
-      expect(test).to.equal(8);
+      expect(result).to.be.a('number');
+      expect(result).to.equal(8);
     });
   });
 });

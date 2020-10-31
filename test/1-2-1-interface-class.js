@@ -1,9 +1,9 @@
-const chapter2 = require('../src/1-object-oriented-javascript/2-interfaces');
+const { name, chapter, test } = require(
+  '../src/1-object-oriented-javascript/2-interfaces'
+);
 const { expect } = require('chai');
 
-const chapter = chapter2.chapter;
-const name = chapter2.name;
-const Interface = chapter2.test.section1;
+const Interface = test.section1;
 
 describe('Chapter 2 - Section 1', function() {
   it('should be the right chapter', function() {

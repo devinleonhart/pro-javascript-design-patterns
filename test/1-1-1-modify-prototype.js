@@ -1,9 +1,9 @@
-const chapter1 = require('../src/1-object-oriented-javascript/1-expressive-javascript');
+const { name, chapter, test } = require(
+  '../src/1-object-oriented-javascript/1-expressive-javascript'
+);
 const { expect } = require('chai');
 
-const chapter = chapter1.chapter;
-const name = chapter1.name;
-const test = chapter1.test.section1;
+const counter = test.section1;
 
 describe('Chapter 1 - Section 1', function() {
   it('should be the right chapter', function() {
@@ -16,8 +16,8 @@ describe('Chapter 1 - Section 1', function() {
 
   describe('Modify Prototype', function() {
     it('should have a Counter function.', function() {
-      expect(test).to.be.a('object');
-      expect(test.name).to.equal('Counter');
+      expect(counter).to.be.a('object');
+      expect(counter.name).to.equal('Counter');
     });
 
     it('should have a modified the Function prototype.', function() {
@@ -25,25 +25,25 @@ describe('Chapter 1 - Section 1', function() {
     });
 
     it('should have given Counter an increment method.', function() {
-      expect(test.increment).to.be.a('Function');
+      expect(counter.increment).to.be.a('Function');
     });
 
     it('should have given Counter a decrement method.', function() {
-      expect(test.decrement).to.be.a('Function');
+      expect(counter.decrement).to.be.a('Function');
     });
 
     it('should have an initial value.', function() {
-      expect(test.value).to.equal(0);
+      expect(counter.value).to.equal(0);
     });
 
     it('should increment', function() {
-      test.increment();
-      expect(test.value).to.equal(1);
+      counter.increment();
+      expect(counter.value).to.equal(1);
     });
 
     it('should decrement', function() {
-      test.decrement();
-      expect(test.value).to.equal(0);
+      counter.decrement();
+      expect(counter.value).to.equal(0);
     });
   });
 });
